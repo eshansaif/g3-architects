@@ -1,0 +1,19 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&family=Work+Sans&display=swap');
+
+/* Common styles */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Navigation styles */
+
+.nav {
+    display: flex;
+}
+
+.nav-right {
+    display: flex;
+}
