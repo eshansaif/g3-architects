@@ -218,6 +218,7 @@ section {
 }
 
 .single-sponsor img {
+    width: 100%;
     filter: grayscale() brightness(110%);
 }
 
@@ -246,6 +247,9 @@ section {
     ;
     gap: 50px;
     padding: 50px 100px;
+
+
+
 }
 
 .get-in-touch-left-single {
@@ -310,24 +314,81 @@ textarea:focus {
     }
 
     .banner-title,
-    .section-title {
+    .section-title,
+    .thicker-quick-list,
+    .orange-features,
+    .lovely-feature-border,
+    .get-in-touch-title {
         font-size: 12vw;
     }
 
     .nav,
-    .nav-right {
+    .nav-right,
+    .quick-feature-right,
+    .features-you-love,
+    .some-facts,
+    .get-in-touch-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        gap: 50px;
     }
 
     .quick-features-list {
         flex-direction: column-reverse;
     }
 
-    .quick-features-left {
+    .quick-features-left,
+    .all-facts,
+    .sponsors {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
+        justify-items: center;
     }
+
+    .lovely-feature-right img {
+        width: 100%;
+    }
+
+
+    .btn-primary,
+    .unique-btn,
+    .year-btn-text {
+        position: static;
+        width: 70%;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .get-in-touch-container .get-in-touch-left-single {
+        width: 100%;
+    }
+
+    .get-in-touch-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .get-in-touch-left {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-right: 0;
+        margin-right: 0;
+        border: 0;
+    }
+
+    .single-fact {
+        border: 1px solid #FF900E;
+        border-radius: 8px;
+        padding: 10px 10px;
+        text-align: center;
+        transition: background-color 1s ease-out, transform 1s ease-out;
+    }
+
+
 }
