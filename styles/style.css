@@ -184,7 +184,6 @@ section {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 120px;
     margin-top: 60px;
-    /* margin-bottom: 100px; */
 }
 
 .single-fact {
@@ -215,6 +214,65 @@ section {
     grid-template-columns: repeat(5, 1fr);
     gap: 50px;
     margin-top: 50px;
+}
+
+.single-sponsor img {
+    filter: grayscale() brightness(110%);
+}
+
+/* Get in touch styles */
+.get-in-touch-left {
+    grid-area: get-in-touch-left;
+    /* border-right: 2px solid #FF900E; */
+    border-right: 1px solid #dfdfdf;
+    padding-right: 50px;
+}
+
+.get-in-touch-right {
+    grid-area: get-in-touch-right;
+}
+
+.get-in-touch-container {
+    background-color: rgba(255, 144, 14, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "get-in-touch-left get-in-touch-right get-in-touch-right"
+    ;
+    gap: 50px;
+    padding: 50px 100px;
+}
+
+.get-in-touch-left-single {
+    background-color: white;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.larger-icon {
+    color: #FF900E;
+    font-size: 36px !important;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #FF900E;
+    color: white;
+    font-size: 16px;
 }
 
 
