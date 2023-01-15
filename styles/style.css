@@ -106,7 +106,8 @@ section {
 }
 
 .quick-features-left img {
-    width: 342px;
+    /* width: 342px; */
+    width: 100%;
 }
 
 .thicker-quick-list {
@@ -221,6 +222,10 @@ section {
 }
 
 /* Get in touch styles */
+.get-in-touch-title {
+    text-align: center;
+}
+
 .get-in-touch-left {
     grid-area: get-in-touch-left;
     /* border-right: 2px solid #FF900E; */
@@ -285,4 +290,44 @@ textarea:focus {
 
 .footer p {
     text-align: center;
+}
+
+/* -------------- Media Query for Screen ----------------- */
+.hide {
+    display: none;
+}
+
+/* For smaller device/mobile device */
+
+@media only screen and (max-width: 668px) {
+
+
+    .container,
+    .banner {
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .banner-title,
+    .section-title {
+        font-size: 12vw;
+    }
+
+    .nav,
+    .nav-right {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quick-features-list {
+        flex-direction: column-reverse;
+    }
+
+    .quick-features-left {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
 }
